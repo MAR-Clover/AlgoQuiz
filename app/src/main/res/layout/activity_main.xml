@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/clearB"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Clear"
+            android:textColor="@color/dark"
+            android:backgroundTint="@color/gold"
+            />
+        <Button
+            android:id="@+id/allQ"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="All Questions"
+            android:textColor="@color/dark"
+            android:backgroundTint="@color/gold"
+            />
+        <Button
+            android:id="@+id/hintB"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:text="Hint"
+            android:textColor="@color/dark"
+            android:backgroundTint="@color/gold"
+
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/algoQ"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:textSize="12dp"
+        android:text="Display Algo Question Here"
+        android:textColor="@color/gold"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/conversationView"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/algoAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_right_textview_background"
+                    android:padding="16dp"
+                    android:text="Hello this is gpt"
+                    android:textColor="@color/gold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/algoAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_left_textview_background"
+                    android:padding="16dp"
+                    android:text="Hello this is gpt"
+                    android:textColor="@color/gold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/algoAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_left_textview_background"
+                    android:padding="16dp"
+                    android:text="Hello this is gpt"
+                    android:textColor="@color/gold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/algoAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_right_textview_background"
+                    android:padding="16dp"
+                    android:text="This is a new TextView aligned right"
+                    android:textColor="@color/gold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/questionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Question number:"
+        android:textColor="@color/gold"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/dark"
+            android:gravity="center"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/dark"
+            android:gravity="center"
+            android:text="Next" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal">
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Your answer here"
+            android:textColor="@color/gold"
+            android:gravity="center"
+            android:maxLines="3"
+            android:background="@drawable/rounded_textview_background"
+            />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/dark"
+            android:gravity="center"
+            android:text="Enter"/>
+    </LinearLayout>
+
+</LinearLayout>

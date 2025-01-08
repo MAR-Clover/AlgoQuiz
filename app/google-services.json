@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "66283304786",
+    "project_id": "algoquiz-3e237",
+    "storage_bucket": "algoquiz-3e237.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66283304786:android:dc7ef9202e19911759ec8b",
+        "android_client_info": {
+          "package_name": "com.example.algoquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHE_AZvLMTCtBNac-CQuW-ZFtJXCEYKew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
